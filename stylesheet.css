@@ -1,0 +1,185 @@
+h1 {
+    color: #ffffee;
+    font-size: 90px;
+    font-family: lobster;
+    text-align: center;
+    height: 320px;
+    padding-top: 40px;
+}
+header {
+    height: 450px;
+    padding-top: 150px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(img/P1050979.JPG);
+    opacity: 0.8;
+}
+nav {
+    background-color: #663300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*
+#fixed {
+position: fixed;
+}
+*/
+nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffcc11;
+}
+
+.shop {
+    background-color: #ffffdd;
+    color: #663300;
+    padding: 30px;
+}
+
+.shop p {
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    height: 300px;
+}
+
+.shop img {
+    float: right;
+}
+
+.photo {
+    padding: 30px;
+    background-color: #663300;
+}
+
+.photo h2 {
+    color: #ffcc11;
+    border-color: #ffcc11;
+}
+
+rt {
+    font-family: lobster;
+}
+
+.photo h3 {
+    color: #663300;
+}
+
+.photo p {
+    color: #ffffff;
+    clear: left;
+}
+
+.f-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.f-container > * {
+    flex: 1 1 100px;
+}
+
+.small {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+.small:hover {
+    background-color: #f5d86e;
+}
+
+.small img {
+    width: 300px;
+}
+
+.box {
+    float: left;
+}
+
+.price {
+    padding: 30px;
+    background-image: url(img/wood.jpg);
+    background-color: #663300;
+}
+
+.price h2 {
+    color: #ffcc11;
+    border-color: #ffcc11;
+}
+
+.price table {
+    background-color: #ffffdd;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.price td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.price th {
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: #ffcc11;
+    text-align: left;
+}
+
+.access {
+    padding: 30px;
+    background-color: #ffffdd;
+    height: 500px;
+    color: #663300;
+}
+
+.access h3 {
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 0px;
+}
+
+.access ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.access div {
+    float: left;
+    width: 50%;
+}
+.SNS{
+    width: 45px;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    background-color: #663300;
+    color: #ffffff;
+}
+.sns img {
+    width: 45px;
+    height: 45px;
+}
+.sns li {
+    display: inline-block;
+    position: bottom
+}

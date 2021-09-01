@@ -1,0 +1,54 @@
+coffee
+    ブレンド　coffee 400yen
+    アメリカン　weak coffee 400yen
+    イタリアン dark roast coffee 400yen
+    カフェオレ　cafe au lait 450yen
+    カフェ・ウインター　coffee with whipped cream 500yen
+    
+    アイスコーヒー　iced coffee　450yen
+    コーヒーフロート　iced coffee with ice cream 600yen
+    
+tea
+    紅茶　tea 400yen
+    レモンティー　tea with lemon 400yen
+    ミルクティー　tea with milk 400yen
+    
+    セイロン　ceylon tea 450yen
+    アッサム　assam tea 450yen
+    ダージリン　darjeelin tea 500yen
+    アールグレイ　earl grey tea 500yen
+    
+    ロイヤルミルクティー　stewed milk tea 500yen
+    アイスティー　iced tea 450yen
+    
+juice
+    オレンジ　orange　420yen
+    グレープフルーツ　grapefruit 420yen
+    アップル　apple 420yen
+    グレープ　grape 420yen
+    
+    バナナシェイク　banana shako 450yen
+    
+soft drink
+    コーラ　(zero)　coca-cola(zero) 400yen
+    ジンジャエール　ginger ale 400yen
+    コーラフロート　coke with ice cream 580yen
+    ココア　hot chocolate 450yen
+    ミルク　milk 500yen
+    
+    アイスクリーム　ice cream 400yen
+    
+hot sandwith 各600yen
+    ツナとほうれん草　tuna & spinach
+    ハムとチーズ　ham & chease
+    アボカドとハム　avocado & ham
+    ハンバーグ　hamburg steak
+    コンビーチキン　corned beef & cabbage
+    豚肉とレンコンのコロッケ　poak&lotus root croquet
+    ハーブチキンと舞茸のグリル　griled herb-chiken&maitake mushroom
+    イワシとチーズのトマトソース　sardine & cheese tomato sauce
+    ドライカレーと目玉焼き　keema curry & fried egg
+    
+toast
+    バタートースト　butterd toast 300yen
+    自家製ジャムトースト　toast and homemade jam 400yen
