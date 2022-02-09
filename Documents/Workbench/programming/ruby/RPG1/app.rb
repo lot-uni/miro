@@ -10,16 +10,17 @@ set :server, 'thin'
 set :sockets, []
 
 before do
-  if Count.all.size == 0
-    Count.create(number: 0)
-  end
+  if Borad.all.size == 0
+    Borad.create(number_of_people: 0, game_turn: 0, resert_end: 0, play_data: "[[1,12,][]]", captured_pieces: "")
+   end
 end
 
 get '/' do
-  @hoge = Count.first
-  if @hoge.number == 0&&session[:tern] == nil
+  @hoge = Borad.first
+  @game_turn = @hoge.game_turn
+  if @hoge.number_of_people == 0&&session[:tern] == nil
     session[:tern] = "先手"
-  elsif @hoge.number == 1&&session[:tern] == nil
+  elsif @hoge.number_of_people == 1&&session[:tern] == nil
     session[:tern] = "後手"
   elsif session[:tern] == nil
     session[:tern] = "観客"
@@ -32,25 +33,32 @@ get '/socket' do
     request.websocket do |ws|
       ws.onopen do
         settings.sockets << ws
-        hoge = Count.first
-        hoge.number += 1
+        hoge = Borad.first
+        hoge.number_of_people += 1
         hoge.save
         settings.sockets.each do |s|
-          s.send({"type":"change","value":hoge.number}.to_json)
+          s.send({"type":"change","value":hoge.number_of_people}.to_json)
         end
       end
       ws.onmessage do |msg|
+        data = JSON.parse(msg)
+        case data["type"]
+        when "move"
+          hoge = Borad.first
+          hoge.game_turn = data["game_turn"]
+          hoge.save
+        end
         settings.sockets.each do |s|
           s.send(msg)
         end
       end
       ws.onclose do
         settings.sockets.delete(ws)
-        hoge = Count.first
-        hoge.number -= 1
+        hoge = Borad.first
+        hoge.number_of_people -= 1
         hoge.save
         settings.sockets.each do |s|
-          s.send({"type":"change","value":hoge.number}.to_json)
+          s.send({"type":"change","value":hoge.number_of_people}.to_json)
         end
       end
     end

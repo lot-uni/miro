@@ -10,13 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_23_024537) do
+ActiveRecord::Schema.define(version: 2022_02_08_222409) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "counts", force: :cascade do |t|
-    t.integer "number", default: 0
+  create_table "borads", force: :cascade do |t|
+    t.integer "number_of_people"
+    t.integer "game_turn"
+    t.integer "resert_end"
+    t.text "play_data"
+    t.text "captured_pieces"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>回線接続将棋</title>
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   <script type="text/javascript" src="/assets/js/p5.js"></script>
   <script type="text/javascript" src="/assets/js/p5.sound.min.js"></script>
   <script type="text/javascript" src="/assets/js/sketch.js"></script>
-  <%# <script type="text/javascript" src="/assets/js/main.js"></script> %>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
 </head>
 <body>
 <h1>回線接続将棋</h1>
-<p id="game_turn">現在0手目</p>
+<p>現在<span id="game_turn"><%=@game_turn%></span>手目です</p>
 <p>あなたは<span id="player"><%=session[:tern]%></span>です。</p>
 <p id="counter"></p>
 </body>
